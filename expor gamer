@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesús Manuel Gallardo Rubio - Sueños y Logros</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        section {
+            padding: 20px;
+        }
+        .language-switcher {
+            display: flex;
+            justify-content: flex-end;
+        }
+        .language-switcher button {
+            background-color: #4CAF50;
+            border: none;
+            color: white;
+            padding: 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        .language-switcher button:hover {
+            background-color: #45a049;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: white;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function switchLanguage(lang) {
+            const contentEs = document.getElementById('content-es');
+            const contentEn = document.getElementById('content-en');
+            if (lang === 'es') {
+                contentEs.style.display = 'block';
+                contentEn.style.display = 'none';
+            } else {
+                contentEs.style.display = 'none';
+                contentEn.style.display = 'block';
+            }
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>Jesús Manuel Gallardo Rubio</h1>
+        <p>Sueños y logros que inspiran</p>
+    </header>
+    <nav>
+        <div>
+            <a href="#about">Sobre mí</a>
+            <a href="#achievements">Logros</a>
+            <a href="#contact">Contacto</a>
+        </div>
+        <div class="language-switcher">
+            <button onclick="switchLanguage('es')">Español</button>
+            <button onclick="switchLanguage('en')">English</button>
+        </div>
+    </nav>
+    <section id="content-es">
+        <h2 id="about">Sobre mí</h2>
+        <p>Soy Jesús Manuel Gallardo Rubio, un joven apasionado por la robótica y los deportes. Mi misión es inspirar a otros a perseguir sus sueños.</p>
+        <h2 id="achievements">Logros</h2>
+        <ul>
+            <li>Ganar mi primer torneo de voleibol con mi equipo.</li>
+            <li>Obtener la medalla de primer lugar en robótica en la Universidad del Magdalena.</li>
+        </ul>
+        <h2 id="contact">Contacto</h2>
+        <p>Puedes encontrarme en todas las redes sociales como <strong>Expor Gamer</strong>.</p>
+    </section>
+    <section id="content-en" style="display: none;">
+        <h2 id="about">About Me</h2>
+        <p>I am Jesús Manuel Gallardo Rubio, a young enthusiast of robotics and sports. My mission is to inspire others to pursue their dreams.</p>
+        <h2 id="achievements">Achievements</h2>
+        <ul>
+            <li>Winning my first volleyball tournament with my team.</li>
+            <li>Achieving first place in a robotics competition at the Universidad del Magdalena.</li>
+        </ul>
+        <h2 id="contact">Contact</h2>
+        <p>You can find me on all social networks as <strong>Expor Gamer</strong>.</p>
+    </section>
+    <footer>
+        <p>&copy; 2024 Jesús Manuel Gallardo Rubio. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
